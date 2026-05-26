@@ -1,0 +1,3 @@
+GPU_Model,GPU_Series,Memory_GB,VRAM_Type,Tensor_Cores,Architecture,Typical_Use_Case
+RTX4070 Laptop,Ada Lovelace,8,GDDR6,5888,Consumer/Laptop,Portable workstations
+RTX4080 Laptop,Ada Lovelace,12,GDDR6,9728,Consumer/Laptop,High-end portable workstations

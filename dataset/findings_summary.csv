@@ -1,0 +1,12 @@
+Finding_Category,Metric,Value,Details
+Efficiency_Gain,Average_Speedup,3.4x,"INT8 vs FP16 across all models and GPUs (excluding CPU offloading)"
+Efficiency_Gain,LLaMA2_RTX4070_Speedup,66.79x,"Largest speedup observed; due to CPU offloading in FP16"
+Efficiency_Gain,GPT2_RTX4070_Speedup,1.53x,"Smallest speedup for smallest model"
+Quality_Impact,LLaMA2_BLEU_Degradation,-0.17,"From 0.32 to 0.15; FP16 to INT8 on RTX4070"
+Quality_Impact,Qwen_ROUGE1_Degradation,-0.32,"From 0.69 to 0.37; FP16 to INT8 on RTX4080"
+Quality_Impact,Code_Syntax_Validity_LLaMA,93%,"LLaMA-2 maintains 93% syntactic validity in INT8"
+Quality_Impact,Code_Syntax_Validity_Qwen,87%,"Qwen1.5 maintains 87% syntactic validity in INT8"
+Robustness,Smaller_Model_Resilience,Better,"GPT-2 shows less quality degradation than larger models"
+Robustness,Hardware_Effect_RTX4080,Mitigates,"RTX4080 reduces some degradation effects vs RTX4070"
+Conclusion,INT8_Recommendation,Suitable,"For resource-constrained real-time applications"
+Conclusion,Full_Precision_Recommendation,Preferred,"For high-quality textual output requiring depth and coherence"

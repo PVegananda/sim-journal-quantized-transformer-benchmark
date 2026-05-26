@@ -1,0 +1,18 @@
+# Dataset Prompt Kode (15 prompt)
+# Sumber: jurnal Oprea & Bâra (2026) — Section 4.7
+
+Write a Python function to compute factorial recursively
+Implement binary search algorithm in Python
+Write a merge sort function in Python
+Create a simple Flask API endpoint for user login
+Write a SQL query to find top 5 customers by total revenue
+Implement a singly linked list with insert and delete methods in Python
+Write a Python function to check if a string is a palindrome
+Implement Dijkstra's shortest path algorithm in Python
+Write a Fibonacci sequence generator using Python itertools
+Create a dictionary-based word frequency counter in Python
+Write a Python class for a stack data structure with push pop and peek
+Implement a binary tree with inorder traversal in Python
+Write a Python decorator to measure function execution time
+Create a context manager in Python for file handling with error logging
+Write a Python function to flatten a nested list of arbitrary depth

@@ -1,0 +1,9 @@
+# Jawaban Referensi Manusia
+# Ditulis oleh peneliti domain machine learning
+# Digunakan sebagai ground truth untuk evaluasi BLEU/ROUGE
+
+PROMPT_1: In the future, quantization for large language models will
+REFERENCE: In the future, quantization for large language models will play a critical role in enabling efficient deployment across edge devices and low-resource environments. Advances in quantization-aware training and mixed-precision strategies will likely reduce accuracy degradation while improving energy efficiency and scalability.
+
+PROMPT_2: Explain quantization entanglement in simple terms
+REFERENCE: Quantization entanglement refers to the interdependency between quantization errors across different layers of a neural network. When one layer is quantized, the resulting rounding errors propagate through subsequent layers, creating a compounding effect that can degrade model accuracy. Managing this entanglement is key to achieving high-quality quantized models.

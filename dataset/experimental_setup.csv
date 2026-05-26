@@ -1,0 +1,13 @@
+Parameter,Value,Description
+Quantization_Method,INT8 PTQ,Post-Training Quantization to 8-bit integers
+Reference_Precision,FP16,16-bit floating point (full precision)
+Models_Tested,3,GPT-2 (117M) LLaMA-2-7B-Chat LLaMA-2-7B Qwen1.5-1.8B-Chat
+GPUs_Tested,2,NVIDIA RTX4070 Laptop GPU NVIDIA RTX4080 Laptop GPU
+Text_Prompts,50,Generic quantization queries
+Code_Prompts,15,Programming tasks (algorithms data structures etc)
+Text_Metrics,"BLEU, ROUGE-1, ROUGE-L",Lexical overlap metrics
+Code_Metrics,"BLEU, ROUGE-1, ROUGE-L, Syntactic Validity",Code correctness assessment
+Semantic_Evaluators,2,GPT-4o and Gemini 2.5 Flash
+Max_Tokens,512,Generation length limit per inference
+Temperature,0.7,Sampling diversity
+Top_P,0.9,Nucleus sampling parameter

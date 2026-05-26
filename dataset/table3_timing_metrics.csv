@@ -1,0 +1,13 @@
+Model,GPU,Precision,Time_Seconds,Throughput_Tokens_Per_Second,Note
+GPT-2,RTX4070,FP16,12.45,45.32,Standard inference
+GPT-2,RTX4070,INT8,8.12,68.94,8-bit quantized
+GPT-2,RTX4080,FP16,9.87,57.15,Standard inference
+GPT-2,RTX4080,INT8,5.43,103.87,8-bit quantized
+LLaMA-2-7B-Chat,RTX4070,FP16,1247.32,0.92,CPU offloading due to memory constraints
+LLaMA-2-7B-Chat,RTX4070,INT8,18.63,61.45,Full GPU residency
+LLaMA-2-7B-Chat,RTX4080,FP16,50.23,27.89,GPU inference
+LLaMA-2-7B-Chat,RTX4080,INT8,15.14,89.76,Full GPU residency
+Qwen1.5-1.8B-Chat,RTX4070,FP16,32.14,19.73,Standard inference
+Qwen1.5-1.8B-Chat,RTX4070,INT8,21.43,29.64,8-bit quantized
+Qwen1.5-1.8B-Chat,RTX4080,FP16,24.98,25.47,Standard inference
+Qwen1.5-1.8B-Chat,RTX4080,INT8,13.76,46.12,8-bit quantized

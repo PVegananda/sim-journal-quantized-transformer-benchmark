@@ -1,0 +1,89 @@
+Data_Category,Model,GPU,Precision,Task_Type,Metric_Name,Value,Value_Std,Unit,Source_Table,Notes
+TIMING,GPT-2,RTX4070,FP16,Text Generation,Inference Time,12.45,0.0,seconds,Table 3,Standard inference
+TIMING,GPT-2,RTX4070,INT8,Text Generation,Inference Time,8.12,0.0,seconds,Table 3,8-bit quantized
+TIMING,GPT-2,RTX4070,FP16,Text Generation,Throughput,45.32,0.0,tokens/s,Table 3,Standard inference
+TIMING,GPT-2,RTX4070,INT8,Text Generation,Throughput,68.94,0.0,tokens/s,Table 3,8-bit quantized
+TIMING,GPT-2,RTX4080,FP16,Text Generation,Inference Time,9.87,0.0,seconds,Table 3,Standard inference
+TIMING,GPT-2,RTX4080,INT8,Text Generation,Inference Time,5.43,0.0,seconds,Table 3,8-bit quantized
+TIMING,GPT-2,RTX4080,FP16,Text Generation,Throughput,57.15,0.0,tokens/s,Table 3,Standard inference
+TIMING,GPT-2,RTX4080,INT8,Text Generation,Throughput,103.87,0.0,tokens/s,Table 3,8-bit quantized
+TIMING,LLaMA-2-7B-Chat,RTX4070,FP16,Text Generation,Inference Time,1247.32,0.0,seconds,Table 3,CPU offloading due to memory constraints
+TIMING,LLaMA-2-7B-Chat,RTX4070,INT8,Text Generation,Inference Time,18.63,0.0,seconds,Table 3,Full GPU residency
+TIMING,LLaMA-2-7B-Chat,RTX4070,FP16,Text Generation,Throughput,0.92,0.0,tokens/s,Table 3,CPU offloading due to memory constraints
+TIMING,LLaMA-2-7B-Chat,RTX4070,INT8,Text Generation,Throughput,61.45,0.0,tokens/s,Table 3,Full GPU residency
+TIMING,LLaMA-2-7B-Chat,RTX4080,FP16,Text Generation,Inference Time,50.23,0.0,seconds,Table 3,GPU inference
+TIMING,LLaMA-2-7B-Chat,RTX4080,INT8,Text Generation,Inference Time,15.14,0.0,seconds,Table 3,Full GPU residency
+TIMING,LLaMA-2-7B-Chat,RTX4080,FP16,Text Generation,Throughput,27.89,0.0,tokens/s,Table 3,GPU inference
+TIMING,LLaMA-2-7B-Chat,RTX4080,INT8,Text Generation,Throughput,89.76,0.0,tokens/s,Table 3,Full GPU residency
+TIMING,Qwen1.5-1.8B-Chat,RTX4070,FP16,Text Generation,Inference Time,32.14,0.0,seconds,Table 3,Standard inference
+TIMING,Qwen1.5-1.8B-Chat,RTX4070,INT8,Text Generation,Inference Time,21.43,0.0,seconds,Table 3,8-bit quantized
+TIMING,Qwen1.5-1.8B-Chat,RTX4070,FP16,Text Generation,Throughput,19.73,0.0,tokens/s,Table 3,Standard inference
+TIMING,Qwen1.5-1.8B-Chat,RTX4070,INT8,Text Generation,Throughput,29.64,0.0,tokens/s,Table 3,8-bit quantized
+TIMING,Qwen1.5-1.8B-Chat,RTX4080,FP16,Text Generation,Inference Time,24.98,0.0,seconds,Table 3,Standard inference
+TIMING,Qwen1.5-1.8B-Chat,RTX4080,INT8,Text Generation,Inference Time,13.76,0.0,seconds,Table 3,8-bit quantized
+TIMING,Qwen1.5-1.8B-Chat,RTX4080,FP16,Text Generation,Throughput,25.47,0.0,tokens/s,Table 3,Standard inference
+TIMING,Qwen1.5-1.8B-Chat,RTX4080,INT8,Text Generation,Throughput,46.12,0.0,tokens/s,Table 3,8-bit quantized
+TEXT_METRICS,GPT-2,RTX4070,FP16,Text Generation,BLEU,0.24,0.08,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4070,INT8,Text Generation,BLEU,0.22,0.09,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4070,FP16,Text Generation,ROUGE-1,0.68,0.12,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4070,INT8,Text Generation,ROUGE-1,0.65,0.13,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4070,FP16,Text Generation,ROUGE-L,0.61,0.10,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4070,INT8,Text Generation,ROUGE-L,0.58,0.11,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4080,FP16,Text Generation,BLEU,0.24,0.08,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4080,INT8,Text Generation,BLEU,0.21,0.09,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4080,FP16,Text Generation,ROUGE-1,0.68,0.12,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4080,INT8,Text Generation,ROUGE-1,0.64,0.13,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4080,FP16,Text Generation,ROUGE-L,0.61,0.10,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,GPT-2,RTX4080,INT8,Text Generation,ROUGE-L,0.57,0.11,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4070,FP16,Text Generation,BLEU,0.32,0.07,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4070,INT8,Text Generation,BLEU,0.16,0.08,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4070,FP16,Text Generation,ROUGE-1,0.72,0.10,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4070,INT8,Text Generation,ROUGE-1,0.51,0.12,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4070,FP16,Text Generation,ROUGE-L,0.68,0.09,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4070,INT8,Text Generation,ROUGE-L,0.35,0.11,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4080,FP16,Text Generation,BLEU,0.32,0.07,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4080,INT8,Text Generation,BLEU,0.15,0.08,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4080,FP16,Text Generation,ROUGE-1,0.72,0.10,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4080,INT8,Text Generation,ROUGE-1,0.42,0.13,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4080,FP16,Text Generation,ROUGE-L,0.68,0.09,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,LLaMA-2-7B-Chat,RTX4080,INT8,Text Generation,ROUGE-L,0.32,0.12,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4070,FP16,Text Generation,BLEU,0.28,0.08,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4070,INT8,Text Generation,BLEU,0.13,0.07,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4070,FP16,Text Generation,ROUGE-1,0.69,0.11,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4070,INT8,Text Generation,ROUGE-1,0.49,0.12,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4070,FP16,Text Generation,ROUGE-L,0.63,0.10,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4070,INT8,Text Generation,ROUGE-L,0.30,0.11,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4080,FP16,Text Generation,BLEU,0.28,0.08,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4080,INT8,Text Generation,BLEU,0.12,0.08,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4080,FP16,Text Generation,ROUGE-1,0.69,0.11,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4080,INT8,Text Generation,ROUGE-1,0.37,0.13,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4080,FP16,Text Generation,ROUGE-L,0.63,0.10,score,Table 9,Aggregate across 50 prompts
+TEXT_METRICS,Qwen1.5-1.8B-Chat,RTX4080,INT8,Text Generation,ROUGE-L,0.25,0.12,score,Table 9,Aggregate across 50 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4070,FP16,Code Generation,BLEU,0.31,0.09,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4070,INT8,Code Generation,BLEU,0.18,0.10,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4070,FP16,Code Generation,ROUGE-1,0.71,0.11,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4070,INT8,Code Generation,ROUGE-1,0.52,0.13,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4070,FP16,Code Generation,ROUGE-L,0.67,0.10,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4070,INT8,Code Generation,ROUGE-L,0.45,0.12,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4070,INT8,Code Generation,Syntactic Validity,93.0,0.0,percent,Table 13,Structurally valid code
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4080,FP16,Code Generation,BLEU,0.31,0.09,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4080,INT8,Code Generation,BLEU,0.19,0.10,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4080,FP16,Code Generation,ROUGE-1,0.71,0.11,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4080,INT8,Code Generation,ROUGE-1,0.54,0.12,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4080,FP16,Code Generation,ROUGE-L,0.67,0.10,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4080,INT8,Code Generation,ROUGE-L,0.48,0.11,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,LLaMA-2-7B-Chat,RTX4080,INT8,Code Generation,Syntactic Validity,94.0,0.0,percent,Table 13,Structurally valid code
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4070,FP16,Code Generation,BLEU,0.27,0.08,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4070,INT8,Code Generation,BLEU,0.11,0.08,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4070,FP16,Code Generation,ROUGE-1,0.68,0.10,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4070,INT8,Code Generation,ROUGE-1,0.43,0.12,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4070,FP16,Code Generation,ROUGE-L,0.62,0.09,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4070,INT8,Code Generation,ROUGE-L,0.35,0.11,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4070,INT8,Code Generation,Syntactic Validity,87.0,0.0,percent,Table 13,Structurally valid code
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4080,FP16,Code Generation,BLEU,0.27,0.08,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4080,INT8,Code Generation,BLEU,0.12,0.09,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4080,FP16,Code Generation,ROUGE-1,0.68,0.10,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4080,INT8,Code Generation,ROUGE-1,0.45,0.13,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4080,FP16,Code Generation,ROUGE-L,0.62,0.09,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4080,INT8,Code Generation,ROUGE-L,0.38,0.12,score,Table 13,Aggregate across 15 prompts
+CODE_METRICS,Qwen1.5-1.8B-Chat,RTX4080,INT8,Code Generation,Syntactic Validity,89.0,0.0,percent,Table 13,Structurally valid code

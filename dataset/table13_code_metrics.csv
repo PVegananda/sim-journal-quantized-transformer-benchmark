@@ -1,0 +1,9 @@
+Model,GPU,Precision,Task_Type,BLEU_Mean,BLEU_Std,ROUGE1_Mean,ROUGE1_Std,ROUGEL_Mean,ROUGEL_Std,Syntactic_Validity_Percent,N_Prompts
+LLaMA-2-7B-Chat,RTX4070,FP16,Code Generation,0.31,0.09,0.71,0.11,0.67,0.10,100,15
+LLaMA-2-7B-Chat,RTX4070,INT8,Code Generation,0.18,0.10,0.52,0.13,0.45,0.12,93,15
+LLaMA-2-7B-Chat,RTX4080,FP16,Code Generation,0.31,0.09,0.71,0.11,0.67,0.10,100,15
+LLaMA-2-7B-Chat,RTX4080,INT8,Code Generation,0.19,0.10,0.54,0.12,0.48,0.11,94,15
+Qwen1.5-1.8B-Chat,RTX4070,FP16,Code Generation,0.27,0.08,0.68,0.10,0.62,0.09,100,15
+Qwen1.5-1.8B-Chat,RTX4070,INT8,Code Generation,0.11,0.08,0.43,0.12,0.35,0.11,87,15
+Qwen1.5-1.8B-Chat,RTX4080,FP16,Code Generation,0.27,0.08,0.68,0.10,0.62,0.09,100,15
+Qwen1.5-1.8B-Chat,RTX4080,INT8,Code Generation,0.12,0.09,0.45,0.13,0.38,0.12,89,15

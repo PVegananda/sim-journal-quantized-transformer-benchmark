@@ -1,0 +1,21 @@
+id,kategori,tipe,prompt,target_evaluasi
+1,Teks,Utama,"In the future, quantization for large language models will",Prediksi masa depan quantization
+2,Teks,Utama,Explain quantization entanglement in simple terms,Penjelasan konsep teknis
+3,Teks,Tambahan,What are the advantages of INT8 quantization for large language models?,Keunggulan INT8
+4,Teks,Tambahan,How does post-training quantization differ from quantization-aware training?,Perbandingan PTQ vs QAT
+5,Teks,Tambahan,Describe the challenges of deploying LLMs on edge devices,Tantangan edge deployment
+6,Teks,Tambahan,What is the role of BitsAndBytes library in LLM quantization?,Library quantization
+7,Teks,Tambahan,Explain how BLEU score measures text generation quality,Evaluasi metrik BLEU
+8,Teks,Tambahan,What is weight quantization and why does it matter for inference?,Konsep dasar quantization
+9,Teks,Tambahan,How does memory bandwidth affect LLM inference speed on consumer GPUs?,Hardware dan inferensi
+10,Teks,Tambahan,Compare FP16 and INT8 precision formats for neural network inference,Perbandingan format presisi
+11,Kode,Kode,Write a Python function to compute factorial recursively,Fungsi rekursif Python
+12,Kode,Kode,Implement binary search algorithm in Python,Algoritma pencarian biner
+13,Kode,Kode,Write a merge sort function in Python,Algoritma sorting
+14,Kode,Kode,Create a simple Flask API endpoint for user login,Web API Flask
+15,Kode,Kode,Write a SQL query to find top 5 customers by total revenue,Query SQL agregasi
+16,Kode,Kode,Implement a singly linked list with insert and delete methods in Python,Struktur data linked list
+17,Kode,Kode,Write a Python function to check if a string is a palindrome,Pemrosesan string
+18,Kode,Kode,Implement Dijkstra's shortest path algorithm in Python,Algoritma graf
+19,Kode,Kode,Write a Fibonacci sequence generator using Python itertools,Generator Python
+20,Kode,Kode,Create a dictionary-based word frequency counter in Python,Manipulasi dictionary

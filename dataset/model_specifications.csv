@@ -1,0 +1,4 @@
+Model_Name,Model_Variant,Parameters,License,Training_Data_Date,Architecture_Type,Context_Window
+GPT-2,gpt2,117M,MIT,2018,Transformer Decoder,1024
+LLaMA-2-7B-Chat,llama-2-7b-chat,7B,Meta Custom,2023,Transformer Decoder,4096
+Qwen1.5-1.8B-Chat,qwen1.5-1.8b-chat,1.8B,Apache 2.0,2024,Transformer Decoder,32768
