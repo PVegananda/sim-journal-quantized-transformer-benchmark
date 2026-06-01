@@ -1,0 +1,5 @@
+Model,Precision,Syntactic_Valid_Percent,Source
+LLaMA-2-7B-Chat,FP16,100,Section 4.7 journal
+LLaMA-2-7B-Chat,INT8,93,Section 4.7 journal
+Qwen1.5-1.8B-Chat,FP16,100,Section 4.7 journal
+Qwen1.5-1.8B-Chat,INT8,87,Section 4.7 journal

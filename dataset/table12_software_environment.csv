@@ -1,0 +1,5 @@
+Component,Version,Source
+PyTorch,2.1.2,Table 12 journal
+Transformers,4.38.2,Table 12 journal
+BitsAndBytes,0.42.0,Table 12 journal
+CUDA_Toolkit,12.1,Table 12 journal

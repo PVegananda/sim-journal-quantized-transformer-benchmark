@@ -1,0 +1,12 @@
+Parameter,Value,Description,Source
+Decoding_strategy,Greedy decoding,Deterministic - no sampling,Table 1
+Temperature,1.0,Standard - no scaling applied,Table 1
+Top-k,Not used,Disabled,Table 1
+Top-p nucleus_sampling,Not used,Disabled,Table 1
+Max_new_tokens,256,Maximum tokens generated,Table 1
+Repetition_penalty,1.0,No penalty applied,Table 1
+Batch_size,1,Single-prompt inference,Table 1
+Padding_truncation,Disabled,Input fits within context,Table 1
+Random_seed,Fixed,Same seed all runs,Table 1
+Warm_up_runs,1,Excluded from timing,Table 1
+Timing_method,Wall-clock time,Generation phase only,Table 1

@@ -1,9 +1,5 @@
-Model,GPU,Precision,Task_Type,BLEU_Mean,BLEU_Std,ROUGE1_Mean,ROUGE1_Std,ROUGEL_Mean,ROUGEL_Std,Syntactic_Validity_Percent,N_Prompts
-LLaMA-2-7B-Chat,RTX4070,FP16,Code Generation,0.31,0.09,0.71,0.11,0.67,0.10,100,15
-LLaMA-2-7B-Chat,RTX4070,INT8,Code Generation,0.18,0.10,0.52,0.13,0.45,0.12,93,15
-LLaMA-2-7B-Chat,RTX4080,FP16,Code Generation,0.31,0.09,0.71,0.11,0.67,0.10,100,15
-LLaMA-2-7B-Chat,RTX4080,INT8,Code Generation,0.19,0.10,0.54,0.12,0.48,0.11,94,15
-Qwen1.5-1.8B-Chat,RTX4070,FP16,Code Generation,0.27,0.08,0.68,0.10,0.62,0.09,100,15
-Qwen1.5-1.8B-Chat,RTX4070,INT8,Code Generation,0.11,0.08,0.43,0.12,0.35,0.11,87,15
-Qwen1.5-1.8B-Chat,RTX4080,FP16,Code Generation,0.27,0.08,0.68,0.10,0.62,0.09,100,15
-Qwen1.5-1.8B-Chat,RTX4080,INT8,Code Generation,0.12,0.09,0.45,0.13,0.38,0.12,89,15
+GPU,Model,Task,BLEU_mean,BLEU_std,ROUGE1_mean,ROUGE1_std,ROUGEL_mean,ROUGEL_std,N_prompts,Precision_compared,Source
+RTX4070,LLaMA-2-7B-Chat,Code Generation,0.121,0.028,0.402,0.054,0.318,0.043,15,INT8 vs FP16,Table 13 journal
+RTX4080,LLaMA-2-7B-Chat,Code Generation,0.138,0.031,0.431,0.049,0.346,0.041,15,INT8 vs FP16,Table 13 journal
+RTX4070,Qwen1.5-1.8B-Chat,Code Generation,0.103,0.032,0.356,0.061,0.281,0.052,15,INT8 vs FP16,Table 13 journal
+RTX4080,Qwen1.5-1.8B-Chat,Code Generation,0.089,0.029,0.307,0.064,0.249,0.055,15,INT8 vs FP16,Table 13 journal

@@ -1,3 +1,3 @@
-GPU_Model,GPU_Series,Memory_GB,VRAM_Type,Tensor_Cores,Architecture,Typical_Use_Case
-RTX4070 Laptop,Ada Lovelace,8,GDDR6,5888,Consumer/Laptop,Portable workstations
-RTX4080 Laptop,Ada Lovelace,12,GDDR6,9728,Consumer/Laptop,High-end portable workstations
+GPU_Model,Series,Architecture,Use_Case,Note,Source
+RTX4070 Laptop GPU,RTX40 series,Ada Lovelace (4th-gen Tensor Cores),Mid-tier consumer laptop,Lower VRAM capacity and memory bandwidth,Journal Section 4
+RTX4080 Laptop GPU,RTX40 series,Ada Lovelace (4th-gen Tensor Cores),Mid-tier consumer laptop,Higher VRAM capacity - approx 2x throughput in some workloads,Journal Section 4

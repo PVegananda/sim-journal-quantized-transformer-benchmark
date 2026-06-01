@@ -1,0 +1,12 @@
+Parameter,Value,Description,Source
+Decoding_strategy,Greedy decoding,Deterministic generation without sampling,Table 1 journal
+Temperature,1.0,Standard temperature (no scaling),Table 1 journal
+Top-k,Not used,Disabled,Table 1 journal
+Top-p (nucleus sampling),Not used,Disabled,Table 1 journal
+Max_new_tokens,256,Maximum number of generated tokens,Table 1 journal
+Repetition_penalty,1.0,No repetition penalty applied,Table 1 journal
+Batch_size,1,Single-prompt inference,Table 1 journal
+Padding_truncation,Disabled,Input prompts fit within model context window,Table 1 journal
+Random_seed,Fixed,Same seed used for all runs,Table 1 journal
+Warm_up_runs,1,Warm-up run excluded from timing,Table 1 journal
+Timing_method,Wall-clock time,Measured only generation phase,Table 1 journal

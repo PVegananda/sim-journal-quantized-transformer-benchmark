@@ -1,0 +1,5 @@
+GPU,Model,Precision,BLEU,ROUGE1,ROUGEL,Comparison_Type,N_prompts,Source
+RTX4070,Qwen1.5-1.8B-Chat,FP16,0.095,0.25,0.22,vs Human Reference,1,Table 8
+RTX4070,Qwen1.5-1.8B-Chat,INT8,0.132,0.35,0.30,vs Human Reference,1,Table 8
+RTX4080,Qwen1.5-1.8B-Chat,FP16,0.097,0.28,0.19,vs Human Reference,1,Table 8
+RTX4080,Qwen1.5-1.8B-Chat,INT8,0.091,0.20,0.18,vs Human Reference,1,Table 8

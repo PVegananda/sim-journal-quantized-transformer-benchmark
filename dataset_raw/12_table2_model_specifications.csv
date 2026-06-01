@@ -1,0 +1,4 @@
+Model,Size,Architecture,Tokenizer,Training_Data,License,HuggingFace_ID,Source
+GPT-2,117M-1.5B,Decoder-only Transformer,BPE 50k vocab,40 GB WebText,MIT Open,gpt2,Table 2
+LLaMA-2-7B-Chat,7B,Decoder-only Transformer,SentencePiece,2T tokens public+curated,Meta Custom,meta-llama/Llama-2-7b-chat-hf,Table 2
+Qwen1.5-1.8B-Chat,1.8B,Decoder-only Transformer,BPE FastTokenizer,Multilingual+web corpora,Apache 2.0,Qwen/Qwen1.5-1.8B-Chat,Table 2

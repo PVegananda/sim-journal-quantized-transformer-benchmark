@@ -1,0 +1,5 @@
+GPU,Model,Precision,BLEU,ROUGE1,ROUGEL,Comparison,Source
+RTX4070,LLaMA-2-7B-Chat,FP16,0.105,0.24,0.24,vs human reference,Table 7 journal
+RTX4070,LLaMA-2-7B-Chat,INT8,0.100,0.27,0.22,vs human reference,Table 7 journal
+RTX4080,LLaMA-2-7B-Chat,FP16,0.122,0.32,0.27,vs human reference,Table 7 journal
+RTX4080,LLaMA-2-7B-Chat,INT8,0.119,0.27,0.24,vs human reference,Table 7 journal

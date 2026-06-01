@@ -1,0 +1,8 @@
+Criterion,RTX4070_FP16,RTX4070_INT8,RTX4080_FP16,RTX4080_INT8,Source
+Content_Depth,High,Moderate,High - includes practical benefits,Moderate - focuses on strategies,Table 4
+Fluency,Very fluent,Moderately fluent,Very fluent - natural language flow,Moderately fluent - some stiffness,Table 4
+Coherence,Structured with flow,Somewhat fragmented,Structured and well-organized,Fragmented - abrupt truncation,Table 4
+Relevance,High,High,High - focused on-topic,High - still on-topic,Table 4
+Technical_Accuracy,Accurate,Accurate,Accurate and grounded,Accurate but less precise in phrasing,Table 4
+Usefulness,Suitable for publication,Suitable for brief summary,Suitable for publication or reports,Suitable for internal notes or draft,Table 4
+Generation_Time_s,1244.29,18.63,50.04,26.64,Table 4

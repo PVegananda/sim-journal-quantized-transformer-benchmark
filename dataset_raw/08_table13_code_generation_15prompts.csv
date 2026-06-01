@@ -1,0 +1,5 @@
+GPU,Model,Task,BLEU_mean,BLEU_std,ROUGE1_mean,ROUGE1_std,ROUGEL_mean,ROUGEL_std,N_prompts,Precision_compared,Source
+RTX4070,LLaMA-2-7B-Chat,Code Generation,0.121,0.028,0.402,0.054,0.318,0.043,15,INT8 vs FP16,Table 13
+RTX4080,LLaMA-2-7B-Chat,Code Generation,0.138,0.031,0.431,0.049,0.346,0.041,15,INT8 vs FP16,Table 13
+RTX4070,Qwen1.5-1.8B-Chat,Code Generation,0.103,0.032,0.356,0.061,0.281,0.052,15,INT8 vs FP16,Table 13
+RTX4080,Qwen1.5-1.8B-Chat,Code Generation,0.089,0.029,0.307,0.064,0.249,0.055,15,INT8 vs FP16,Table 13

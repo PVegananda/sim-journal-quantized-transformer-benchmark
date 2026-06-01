@@ -1,0 +1,8 @@
+Criterion,RTX4070_FP16,RTX4070_INT8,RTX4080_FP16,RTX4080_INT8,Source
+Content_Depth,Moderate - simplified explanation,High - discusses QAT and accuracy-memory trade-off,High - discusses future architecture and limitations,Moderate - mixes quantization and QEC loosely,Table 5
+Fluency,Fluent and beginner-friendly,Fluent but more technical and dense,Very fluent - clear transitions,Moderately fluent - concepts drift,Table 5
+Coherence,Structured but informal - ends mid-thought,Structured and more formal - ends mid-point,Strong - maintains topic focus,Weaker - abrupt topic shift,Table 5
+Relevance,On-topic general audience,Highly relevant technical perspective,High - future-facing vision,Moderate - diverges into tangential areas,Table 5
+Technical_Accuracy,Mostly accurate - simplifies binary vs INT8,Technically accurate - correct terminology,Accurate - realistic QNN constraints,Partially accurate - QEC not contextually relevant,Table 5
+Usefulness,Good for introductory material,Better for advanced readers or research,Suitable for academic discussions,Suitable as speculative draft - needs refinement,Table 5
+Generation_Time_s,12.66,11.78,13.61,11.08,Table 5

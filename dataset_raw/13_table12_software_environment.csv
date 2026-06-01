@@ -1,0 +1,5 @@
+Component,Version,Role,Source
+PyTorch,2.1.2,Deep learning framework,Table 12
+Transformers,4.38.2,Model loading and inference,Table 12
+BitsAndBytes,0.42.0,INT8 quantization via load_in_8bit,Table 12
+CUDA_Toolkit,12.1,GPU acceleration,Table 12

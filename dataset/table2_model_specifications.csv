@@ -1,0 +1,4 @@
+Model,Size,Description,Architecture,Tokenizer,Training_Data,Quantization_Relevance,License,Source
+GPT-2,117M-1.5B,OpenAI early autoregressive language model for text generation,Decoder-only,BPE (50k),40 GB WebText,Small to mid-size layers; easy to quantize; older FP32 model,Open (MIT),Table 2 journal
+LLaMA-2-7B-Chat,7B,Meta fine-tuned chat version of LLaMA-2 optimized for instruction-following and dialogue,Decoder-only,SentencePiece,2T tokens (public + curated),High quantization interest; transformer optimized; common for 4/8-bit tests,Meta (Custom),Table 2 journal
+Qwen1.5-1.8B-Chat,1.8B,Alibaba compact instruction-tuned chat model from the Qwen 1.5 series,Decoder-only,BPE (FastTokenizer),Multilingual + web/corpora,Small efficient; ideal for 4-bit quantization in edge use cases,Apache 2.0,Table 2 journal

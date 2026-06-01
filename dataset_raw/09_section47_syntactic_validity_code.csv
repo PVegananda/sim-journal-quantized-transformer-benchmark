@@ -1,0 +1,5 @@
+Model,Precision,Syntactic_Valid_Percent,Invalid_Percent,N_prompts,Source
+LLaMA-2-7B-Chat,FP16,100,0,15,Section 4.7
+LLaMA-2-7B-Chat,INT8,93,7,15,Section 4.7
+Qwen1.5-1.8B-Chat,FP16,100,0,15,Section 4.7
+Qwen1.5-1.8B-Chat,INT8,87,13,15,Section 4.7
