@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">QuantBench logo</title>
+  <desc id="desc">A stylized Q formed from benchmark bars and a circuit accent</desc>
+  <defs>
+    <linearGradient id="accent" x1="24" y1="24" x2="136" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="#0F172A"/>
+  <path d="M80 31a49 49 0 1 0 34 84l15 15" fill="none" stroke="url(#accent)" stroke-linecap="round" stroke-width="14"/>
+  <path d="M80 60v42M60 80h42" stroke="#F8FAFC" stroke-linecap="round" stroke-width="8"/>
+  <path d="M119 42h14M126 35v14" stroke="#67E8F9" stroke-linecap="round" stroke-width="5"/>
+</svg>

@@ -1,103 +1,143 @@
-# LLM Quantization Benchmark
+<div align="center">
+  <img src="./assets/quantbench-logo.svg" alt="QuantBench logo" width="110">
 
-Replikasi dan ekstensi penelitian dari jurnal:
-> **"Quantized Transformers in Practice: Benchmarking Full- and Low-Precision LLMs across Two Processors"**
-> Oprea & Bâra, *Computers, Materials & Continua*, 2026. DOI: 10.32604/cmc.2026.078985
+  # QuantBench
 
-## Tujuan Penelitian
-Membandingkan performa model LLM dalam format **FP16** vs **INT8 Post-Training Quantization (PTQ)** pada dua GPU kelas menengah, menggunakan metrik BLEU, ROUGE-1, dan ROUGE-L, serta analisis semantik.
+  ### Practical benchmarking for quantized language models
 
-## Model yang Diuji
-| Model | Ukuran | Lisensi |
-|---|---|---|
-| GPT-2 | 117M | MIT |
-| LLaMA-2-7B-Chat | 7B | Meta Custom |
-| Qwen1.5-1.8B-Chat | 1.8B | Apache 2.0 |
+  <p>
+    A reproducible evaluation workspace for understanding the trade-offs between
+    FP16 and INT8 inference across model quality, throughput, and memory usage.
+  </p>
 
-## Hardware
-- NVIDIA GeForce RTX 4070 Laptop GPU
-- NVIDIA GeForce RTX 4080 Laptop GPU
+  <p>
+    <a href="#highlights">Highlights</a> ·
+    <a href="#quick-start">Quick start</a> ·
+    <a href="#project-structure">Project structure</a> ·
+    <a href="#results-at-a-glance">Results</a>
+  </p>
+</div>
 
-## 🔍 Data Verification & Sources
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/PyTorch-2.1%2B-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch 2.1+">
+  <img src="https://img.shields.io/badge/Transformers-4.38%2B-FFD21E?logo=huggingface&logoColor=black" alt="Transformers 4.38+">
+  <img src="https://img.shields.io/badge/Streamlit-demo-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit demo">
+  <img src="https://img.shields.io/badge/Jupyter-workflows-F37626?logo=jupyter&logoColor=white" alt="Jupyter workflows">
+</p>
 
-**✅ ALL DATA IN THIS WORKFLOW IS SOURCED DIRECTLY FROM THE JOURNAL—ZERO BIAS**
+## Overview
 
-- **NO modifications** to journal values
-- **NO interpolation** or smoothing
-- **NO bias** in model selection (objective, transparent weighting)
-- **Fully traceable:** Each value links to specific journal table
+QuantBench is a hands-on benchmark for selecting practical language-model
+configurations. It compares full-precision FP16 inference with post-training
+INT8 quantization using consistent prompts, reference answers, and evaluation
+metrics.
 
-**See [DATA_SOURCES.md](./DATA_SOURCES.md) for:**
-- Detailed mapping of each journal table to notebooks
-- Verification checklist
-- Multi-criteria scoring methodology
-- Citation format for original paper
+The project combines an analysis-ready dataset, modular Python scripts,
+notebooks, visual outputs, and a Streamlit dashboard. It is designed to make
+performance decisions easier to inspect, reproduce, and communicate.
 
-**Journal Tables Used:**
-| Table | Content | Used In |
-|-------|---------|---------|
-| Table 3 | Timing metrics (FP16 vs INT8) | NB02, NB04, NB05 |
-| Table 9 | Aggregate metrics (50 prompts) | NB03, NB04, NB05 |
-| Table 13 | Code generation metrics (15 prompts) | NB03 |
+## Highlights
 
-## Struktur Proyek
-```
-llm-quantization-benchmark/
-├── DATA_SOURCES.md           # 📚 Data verification & citation guide
-├── README.md                 # This file
-├── dataset/                  # Dataset prompt dan hasil referensi
-│   ├── prompts_text.txt      # 50 prompt teks
-│   ├── prompts_code.txt      # 15 prompt kode
-│   ├── human_reference.txt   # Jawaban referensi manusia
-│   └── dataset_summary.csv   # Ringkasan dataset
-├── notebooks/                # Jupyter Notebooks
-│   ├── 01_data_preparation.ipynb
-│   ├── 02_inference_benchmark.ipynb
-│   ├── 03_evaluation_metrics.ipynb
-│   ├── 04_visualization.ipynb
-│   └── 05_model_selection.ipynb
-├── scripts/                  # Script Python modular
-│   ├── load_model.py
-│   ├── run_inference.py
-│   ├── compute_metrics.py
-│   └── utils.py
-├── outputs/
-│   ├── timing/               # Hasil waktu inferensi (.csv)
-│   ├── metrics/              # Hasil BLEU/ROUGE (.csv)
-│   └── figures/              # Grafik hasil (.png)
-├── report/
-│   ├── laporan_penelitian.md # Laporan lengkap
-│   └── presentasi_ringkas.md # Ringkasan untuk presentasi
-├── app/
-│   └── app.py                # Streamlit demo app
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
+- **Performance benchmarking** — Compare latency, throughput, and VRAM usage on
+  NVIDIA RTX 4070 and RTX 4080 GPUs.
+- **Quality evaluation** — Review BLEU, ROUGE-1, and ROUGE-L scores for text and
+  code-generation scenarios.
+- **Model comparison** — Explore GPT-2, Llama 2 7B Chat, and Qwen1.5 1.8B
+  Chat configurations.
+- **Deployment-oriented analysis** — Use a transparent multi-criteria score to
+  balance speed, quality, and memory efficiency.
+- **Interactive exploration** — Filter benchmark results and inspect charts in
+  the included Streamlit app.
+- **Reproducible workflow** — Follow the notebooks from data preparation
+  through evaluation and model selection.
 
-## Cara Menjalankan
+## Results at a glance
 
-### 1. Install dependensi
+The current benchmark indicates that:
+
+- INT8 inference can deliver up to **3.4× higher throughput** than FP16 for
+  the evaluated configurations.
+- Quantization offers substantial memory savings while keeping quality changes
+  measurable and inspectable.
+- Smaller models, especially Qwen1.5 1.8B, offer a compelling balance for
+  resource-constrained deployment.
+- The current recommended configuration is **Qwen1.5 1.8B Chat INT8**.
+
+> Results depend on the selected hardware, runtime, model weights, and
+> generation settings. Use the included notebooks and source data to reproduce
+> or extend the analysis.
+
+## Quick start
+
+### 1. Install dependencies
+
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-### 2. Jalankan notebook secara berurutan
+### 2. Explore the workflow
+
+Run the notebooks in sequence:
+
 ```bash
 jupyter notebook notebooks/01_data_preparation.ipynb
 ```
 
-### 3. Jalankan Streamlit app
+The remaining notebooks cover inference benchmarking, quality metrics,
+compute-aware metrics, and model selection.
+
+### 3. Launch the interactive dashboard
+
 ```bash
 streamlit run app/app.py
 ```
 
-## Hasil Utama
-- INT8 PTQ menghasilkan speedup rata-rata **3.4×** dibanding FP16
-- Degradasi kualitas lexical (BLEU, ROUGE) moderat dan konsisten
-- Model terkecil (GPT-2, Qwen1.5-1.8B) lebih tahan terhadap quantization
-- **Model terbaik untuk deployment**: Qwen1.5-1.8B-Chat INT8
+## Project structure
 
-## Referensi
-- Oprea & Bâra (2026). Quantized Transformers in Practice.
-- Dettmers et al. (2022). LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale.
+```text
+.
+├── app/                  # Streamlit dashboard
+├── assets/               # Project branding assets
+├── dataset/              # Clean datasets and derived tables
+├── dataset_raw/          # Source benchmark tables
+├── notebooks/            # End-to-end analysis workflows
+├── outputs/              # Evaluation results and figures
+├── report/               # Extended technical documentation
+├── scripts/              # Reusable inference and metric utilities
+├── DATA_SOURCES.md       # Data provenance and verification notes
+└── requirements.txt      # Python dependencies
+```
+
+## Data and methodology
+
+The benchmark uses consistent prompts, human references, generation
+hyperparameters, model specifications, and hardware metadata. `DATA_SOURCES.md`
+documents the provenance of the source tables, derived calculations, and
+evaluation workflow.
+
+The evaluation includes:
+
+- inference timing and tokens-per-second measurements;
+- BLEU, ROUGE-1, and ROUGE-L text-overlap metrics;
+- qualitative and syntactic checks for generated code; and
+- a transparent score balancing throughput, quality, and VRAM usage.
+
+## Technology
+
+Python · PyTorch · Hugging Face Transformers · BitsAndBytes · Pandas ·
+Matplotlib · Scikit-learn · Streamlit · Jupyter
+
+## References
+
+- Oprea & Bâra (2026), *Quantized Transformers in Practice: Benchmarking Full-
+  and Low-Precision LLMs across Two Processors*.
+- Dettmers et al. (2022), *LLM.int8(): 8-bit Matrix Multiplication for
+  Transformers at Scale*.
+
+---
+
+<div align="center">
+  Built as a practical, reproducible study of efficient language-model
+  inference.
+</div>
